@@ -13,7 +13,7 @@ Descarga un recurso basado en el `id` proporcionado.
 
 **Example Request:**
 ```http
-GET {url}/api/damaged-tags/download-resource?id=12345
+GET :url/api/damaged-tags/download-resource?id=12345
 Authorization: Bearer <token>
 ```
 
@@ -29,7 +29,7 @@ Cambia el estado de los `damaged-tags` indicados en el body por ids. Para actual
 
 **Example Request:**
 ```http
-POST {url}/api/damaged-tags/change-status
+POST :url/api/damaged-tags/change-status
 body: {
     "ids" : [1, 21, 23]
 }
