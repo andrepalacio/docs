@@ -12,7 +12,7 @@ Uso de endpoints para damaged tags
 Descarga un recurso basado en el `id` proporcionado.
 
 **Example Request:**
-```http
+```
 GET :url/api/damaged-tags/download-resource?id=12345
 Authorization: Bearer <token>
 ```
@@ -28,7 +28,7 @@ Authorization: Bearer <token>
 Cambia el estado de los `damaged-tags` indicados en el body por ids. Para actualización individual usar un solo `id`.
 
 **Example Request:**
-```http
+```
 POST :url/api/damaged-tags/change-status
 body: {
     "ids" : [1, 21, 23]
